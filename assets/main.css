@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,700&display=swap');
+
+html, body, head, p, a {
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+a, a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    padding: 0 50px;
+    width: calc(100% - 100px);
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    margin-top: 50px;
+    margin-right: 37px;
+}
+
+.right {
+    max-width: 100%;
+}
+.right .image {
+    max-width: 100%;
+    display: none;
+}
+.right .image.show {
+    display: block;
+}
+.text1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 63px;
+    line-height: 83px;
+    color: #000000;  
+}
+
+.text1--orange {
+    color: #FF6700
+}
+
+.text2 {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 30px;
+    color: #000000;
+}
+.text3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.8572px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.nav {
+    margin-top: 47px;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 29px;
+}
+
+.button {
+    margin-right: 19px;
+    min-width: 159.81px;
+    border-radius: 4.67506px;
+    padding: 6px 0;
+}
+.button--orange {
+    background: #FF6700;
+    border: 2.33753px solid #FF6700;
+    color: #FFFFFF;
+}
+.button--orange:hover {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.button--white {
+    border: 2.33753px solid #FF6700;
+    border-radius: 4.67506px;
+    color: #FF6700;
+}
+.button--white:hover {
+    font-weight: bold;
+    color: #FF6700;
+}
+
+
+.button:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 1024px) {
+    .right {
+        margin-top: 50px;
+    }
+    .content {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 420px) {
+    .content {
+        padding: 0 15px;
+        width: calc(100% - 30px);
+    }
+    .left {
+        margin: 0;
+    }
+    .text1 {
+        font-size: 50px;
+        line-height: 65px;
+    }
+}
+
+@media (max-width: 350px) {
+    .content {
+        padding: 0 10px;
+        width: calc(100% - 20px);
+    }
+    .left {
+        margin: 0;
+    }
+    .text1 {
+        font-size: 42px;
+        line-height: 54px;
+    }
+    .buttons {
+        flex-wrap: wrap;
+    }
+    .nav {
+        margin-top: 11px;
+    }
+    .text2 {
+        font-size: 18px;
+    }
+    .button {
+        margin-bottom: 12px;
+    }
+    .button:last-child {
+        margin-bottom: 0;
+    }
+}
